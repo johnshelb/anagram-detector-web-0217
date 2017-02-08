@@ -6,9 +6,9 @@ class Anagram
   end
 
   def match(list)
-    word_array = @word.split("").sort!
+    word_array = @word.split("").sort
     list.select do |testword|
-      split_test = testword.split("").sort!
+      split_test = testword.split("").sort
       split_test==word_array
     end
   end
